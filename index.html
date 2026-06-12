@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tesouros da Gentileza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="home" class="screen active">
+      <img class="mascot" src="assets/mascote.png" alt="Mascote sorridente do quiz">
+      <h1>Tesouros da Gentileza</h1>
+      <p class="subtitle">Vamos descobrir quantos tesouros você consegue encontrar?</p>
+      <div class="actions">
+        <button class="primary" id="startBtn">Iniciar aventura</button>
+        <button class="info" id="howBtn">Como jogar</button>
+      </div>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="topbar">
+        <strong id="questionNumber">Pergunta 1/10</strong>
+        <strong id="score">Estrelas: 0</strong>
+      </div>
+      <div class="progress"><span id="progressBar"></span></div>
+      <h2 id="questionText"></h2>
+      <div id="answers" class="answers"></div>
+    </section>
+
+    <section id="feedback" class="screen">
+      <img class="star" src="assets/estrela.png" alt="">
+      <h2 id="feedbackTitle"></h2>
+      <div class="learning">
+        <h3>Explicação</h3>
+        <p id="explanation"></p>
+        <h3>Reflexão Logosófica</h3>
+        <p id="reflection"></p>
+      </div>
+      <button class="primary" id="nextBtn">Próxima descoberta</button>
+    </section>
+
+    <section id="final" class="screen">
+      <h2>Tesouros Encontrados</h2>
+      <p class="result" id="finalScore"></p>
+      <p class="message" id="finalMessage"></p>
+      <div id="values" class="values"></div>
+      <div class="learning">
+        <h3>O que aprendemos?</h3>
+        <p>Aprendemos que a gentileza é como uma sementinha que pode crescer e se espalhar. Um sorriso, uma ajuda, uma palavra amiga ou um gesto de atenção podem melhorar o dia de alguém. Cada pessoa pode fazer o bem e inspirar outras pessoas a fazerem o mesmo.</p>
+      </div>
+      <div class="actions">
+        <button class="primary" id="againBtn">Jogar novamente</button>
+        <button class="info" id="homeBtn">Voltar ao início</button>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="howDialog">
+    <h2>Como jogar</h2>
+    <p>Leia cada pergunta com calma e escolha uma alternativa. Cada acerto vale uma estrela. Se errar, tudo bem: a aventura continua e a explicação ajuda a aprender junto.</p>
+    <button class="primary" id="closeHowBtn">Entendi</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
